@@ -8,9 +8,9 @@
 
 
 Ниже приведен текст deployment.yaml: 
->    apiVersion: apps/v1
->    kind: Deployment
->    metadata:
+<    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
       name: my-deployment
     spec:
       replicas: 10
@@ -38,7 +38,7 @@
           hostAliases:
           - ip: "192.168.49.1" # The IP of localhost from MiniKube
             hostnames:
->            - postgres.local
+            - postgres.local >
             
             
 Ниже приведен текст service.yaml:
