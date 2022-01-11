@@ -8,7 +8,7 @@
 
 
 Ниже приведен текст deployment.yaml: 
-<    apiVersion: apps/v1
+>    apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: my-deployment
@@ -38,11 +38,11 @@
           hostAliases:
           - ip: "192.168.49.1" # The IP of localhost from MiniKube
             hostnames:
-            - postgres.local>
+>            - postgres.local
             
             
 Ниже приведен текст service.yaml:
-<    apiVersion: v1
+>    apiVersion: v1
     kind: Service
     metadata:
       name: my-service
@@ -54,7 +54,7 @@
           protocol: TCP
           targetPort: 8080
       selector:
-        app: my-app>
+>        app: my-app
        
        
 Ниже представлен скрин вывода команды kubectl get po:
