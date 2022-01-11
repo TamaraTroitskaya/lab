@@ -8,12 +8,9 @@
 
 
 Ниже приведен текст deployment.yaml: 
-    apiVersion: apps/v1
-
+<    apiVersion: apps/v1
     kind: Deployment
-
     metadata:
-
       name: my-deployment
     spec:
       replicas: 10
@@ -45,8 +42,8 @@
             
             
 Ниже приведен текст service.yaml:
->    apiVersion: v1
-    kind: Service
+<    apiVersion: v1
+     kind: Service
     metadata:
       name: my-service
     spec:
@@ -57,7 +54,7 @@
           protocol: TCP
           targetPort: 8080
       selector:
->        app: my-app
+        app: my-app >
        
        
 Ниже представлен скрин вывода команды kubectl get po:
