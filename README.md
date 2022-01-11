@@ -8,11 +8,15 @@
 
 
 Ниже приведен текст deployment.yaml: 
-<    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: my-deployment
-    spec:
+    apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+name: my-deployment
+
+spec:
       replicas: 10
       selector:
         matchLabels:
